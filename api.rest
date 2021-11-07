@@ -18,3 +18,14 @@ Content-Type: application/json
   "username": "user",
   "password": "user"
 }
+
+###
+
+POST http://localhost:5000/api/login HTTP/1/1
+Content-Type: application/json 
+Header: "token "
+
+{
+  "username": "user",
+  "password": "user"
+}
