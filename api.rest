@@ -3,9 +3,9 @@ Content-Type: application/json
 
 
 {
-  "username": "user",
-  "email": "user@gmail.com",
-  "password": "user"
+  "username": "admin",
+  "email": "admin@gmail.com",
+  "password": "admin"
 }
 
 ###
@@ -15,18 +15,23 @@ Content-Type: application/json
 
 
 {
-  "username": "user",
-  "password": "user"
+  "username": "admin",
+  "password": "admin"
 }
 
 ###
 
 PUT http://localhost:5000/api/user/61875dda3f1f2b099a526a2d HTTP/1/1
 Content-Type: application/json 
-
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODc1ZGRhM2YxZjJiMDk5YTUyNmEyZCIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2MzYyOTkwMzMsImV4cCI6MTYzNjU1ODIzM30.5xX6uaUOBj6RQZps-7mfTrf6jfXgHgSG-REPxAN1i48
 
 {
-  "username": "user edit",
-  "password": "user",
-  "accessToken": "token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODc1ZGRhM2YxZjJiMDk5YTUyNmEyZCIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2MzYyOTkwMzMsImV4cCI6MTYzNjU1ODIzM30.5xX6uaUOBj6RQZps-7mfTrf6jfXgHgSG-REPxAN1i48"
+  "username": "user edit 2",
+  "password": "user"
 }
+
+###
+
+GET http://localhost:5000/api/user/6187f57b16136bb5d1ddf7e3 HTTP/1/1
+Content-Type: application/json
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODdmNTdiMTYxMzZiYjVkMWRkZjdlMyIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzNjMwMDE4OCwiZXhwIjoxNjM2NTU5Mzg4fQ.DuZuU22nrvaOZkstE_2WV1tmDvrZ8v69Gq3_IfzAShA

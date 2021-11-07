@@ -25,6 +25,16 @@ class UserController {
       res.status(500).json(error);
     }
   }
+
+  async getUser(req, res) {
+    try {
+      const getUser = await User.findById(req.params.id);
+      const { password, ...others } = getUser._doc;
+      res.status(200).json(others);
+    } catch (error) {
+      res.status(500).json(error);
+    }
+  }
 }
 
 module.exports = new UserController();

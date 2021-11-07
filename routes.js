@@ -14,5 +14,6 @@ router.put(
   [verifyToken, verifyAuthorization],
   userController.update
 );
+router.get("/api/user/:id", [verifyToken, verifyAdmin], userController.getUser);
 
 module.exports = router;
