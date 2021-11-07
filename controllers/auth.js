@@ -1,4 +1,5 @@
 const CryptoJS = require("crypto-js");
+const User = require("../models/User");
 
 class AuthController {
   async register(req, res) {
