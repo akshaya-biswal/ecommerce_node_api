@@ -1,7 +1,7 @@
 const Product = require("../models/Product");
 
 class ProductController {
-  async Add(req, res) {
+  async add(req, res) {
     const newProduct = new Product(req.body);
 
     try {
